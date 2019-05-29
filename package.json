@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-bestdoctor",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "BestDoctor eslint config",
   "main": "index.js",
   "author": "NMVikings",
@@ -10,19 +10,19 @@
     "@typescript-eslint/parser": "^1.9.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-config-prettier": "^4.2.0",
+    "eslint-config-prettier": "^4.3.0",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-import-resolver-babel-module": "^5.1.0",
     "eslint-import-resolver-typescript": "^1.1.1",
-    "eslint-plugin-import": "^2.17.2",
-    "eslint-plugin-jest": "^22.5.1",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jest": "^22.6.4",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.13.0"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
-    "prettier": "^1.17.0"
+    "prettier": "^1.17.1"
   },
   "peerDependencies": {
     "eslint": ">=5.0.0",
