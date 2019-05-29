@@ -15,7 +15,19 @@ module.exports = {
   rules: {
     "@typescript-eslint/ban-ts-ignore": "warn",
     "@typescript-eslint/func-call-spacing": ["error"],
-    "@typescript-eslint/member-delimiter-style": "error",
+    "@typescript-eslint/member-delimiter-style": [
+      "error",
+      {
+        multiline: {
+          delimiter: "none",
+          requireLast: true
+        },
+        singleline: {
+          delimiter: "semi",
+          requireLast: false
+        }
+      }
+    ],
     "@typescript-eslint/no-explicit-any": "error",
     // "@typescript-eslint/no-extra-parens": ["error"], WAIT to @typescript-eslint/eslint-plugin version 1.9.1
     "@typescript-eslint/no-extraneous-class": "error",
