@@ -1,60 +1,52 @@
+const path = require("path");
+
+const rulesPath = path.join(__dirname, "rules");
+
+const configPaths = [
+  "eslint.js",
+  "import.js",
+  "jest.js",
+  "jsx-a11y.js",
+  "react.js",
+  "@typescript-eslint.js",
+  "prettier.js"
+].map(name => path.join(rulesPath, name));
+
+const configs = configPaths.map(require);
+
+const configRules = configs.map(config => config.rules);
+const configSettings = configs.map(config => config.settings);
+
+const settings = Object.assign({}, ...configSettings);
+const rules = Object.assign({}, ...configRules);
+
+const [
+  eslintPath,
+  importPath,
+  jestPath,
+  jsxPath,
+  reactPath,
+  typescriptPath,
+  prettierPath
+] = configPaths;
+
 module.exports = {
-  parser: "@typescript-eslint/parser",
-
-  parserOptions: {
-    project: "./tsconfig.json",
-    ecmaFeatures: {
-      jsx: true
-    }
-  },
-
-  plugins: ["react", "import", "@typescript-eslint", "jest"],
-
   extends: [
-    "eslint:recommended",
-    "airbnb-base",
-    "plugin:import/errors",
-    "plugin:import/warnings",
-    "plugin:import/typescript",
-    "plugin:jest/recommended",
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "prettier",
-    "prettier/@typescript-eslint"
+    eslintPath,
+    importPath,
+    jestPath,
+    jsxPath,
+    reactPath,
+    "airbnb",
+    typescriptPath,
+    prettierPath
   ],
 
-  env: {
-    browser: true,
-    node: true,
-    jest: true
-  },
-
-  settings: {
-    // https://github.com/alexgorbatchev/eslint-import-resolver-typescript#configuration
-    "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"]
-    },
-    "import/resolver": {
-      typescript: {}
-    },
-    // https://github.com/yannickcr/eslint-plugin-react#configuration
-    react: {
-      version: "detect"
-    }
-  },
-
-  rules: {
-    "react/prop-types": "off", // typescript вместо prop-types
-    "import/prefer-default-export": "warn",
-    "import/no-extraneous-dependencies": [
-      "error",
-      { devDependencies: ["**/*.test.tsx", "**/*.spec.tsx"] } // Разрешаем импорт devDependencies из тестов
-    ],
-    "react/display-name": "warn",
-    "no-unused-vars": "error"
-  },
+  rules: rules,
 
   globals: {
     __DEV__: true // DEV environment
-  }
+  },
+
+  settings: settings
 };
