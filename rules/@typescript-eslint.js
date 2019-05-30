@@ -35,16 +35,16 @@ module.exports = {
     "@typescript-eslint/no-require-imports": "error",
     "@typescript-eslint/no-this-alias": "error",
     // "@typescript-eslint/no-type-alias": "error", добавить позже
-    "@typescript-eslint/no-unnecessary-qualifier": "error",
+    // "@typescript-eslint/no-unnecessary-qualifier": "error", // не работает, нужен ресерч
     "@typescript-eslint/no-useless-constructor": "error",
     "@typescript-eslint/prefer-for-of": "error",
-    "@typescript-eslint/prefer-includes": "error",
-    "@typescript-eslint/prefer-regexp-exec": "error",
-    "@typescript-eslint/prefer-string-starts-ends-with": "error",
-    "@typescript-eslint/require-array-sort-compare": "error",
-    "@typescript-eslint/restrict-plus-operands": "error",
+    // "@typescript-eslint/prefer-includes": "error", // не работает, нужен ресерч
+    // "@typescript-eslint/prefer-regexp-exec": "error", // не работает, нужен ресерч
+    // "@typescript-eslint/prefer-string-starts-ends-with": "error", // не работает, нужен ресерч
+    // "@typescript-eslint/require-array-sort-compare": "error", // не работает, нужен ресерч
+    // "@typescript-eslint/restrict-plus-operands": "error", // не работает, нужен ресерч
     "@typescript-eslint/type-annotation-spacing": "error",
-    "@typescript-eslint/unbound-method": "error",
+    // "@typescript-eslint/unbound-method": "error", // не работает, нужен ресерч
     "@typescript-eslint/unified-signatures": "error"
   },
 
