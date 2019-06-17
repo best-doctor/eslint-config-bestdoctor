@@ -45,7 +45,8 @@ module.exports = {
     // "@typescript-eslint/restrict-plus-operands": "error", // не работает, нужен ресерч
     "@typescript-eslint/type-annotation-spacing": "error",
     // "@typescript-eslint/unbound-method": "error", // не работает, нужен ресерч
-    "@typescript-eslint/unified-signatures": "error"
+    "@typescript-eslint/unified-signatures": "error",
+    "@typescript-eslint/explicit-function-return-type": "off"
   },
 
   settings: {

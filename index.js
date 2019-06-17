@@ -9,7 +9,8 @@ const configPaths = [
   "jsx-a11y.js",
   "react.js",
   "@typescript-eslint.js",
-  "prettier.js"
+  "prettier.js",
+  "react-hooks.js"
 ].map(name => path.join(rulesPath, name));
 
 const configs = configPaths.map(require);
@@ -27,7 +28,8 @@ const [
   jsxPath,
   reactPath,
   typescriptPath,
-  prettierPath
+  prettierPath,
+  reactHooksPath
 ] = configPaths;
 
 module.exports = {
@@ -37,6 +39,7 @@ module.exports = {
     jestPath,
     jsxPath,
     reactPath,
+    reactHooksPath,
     "airbnb",
     typescriptPath,
     prettierPath

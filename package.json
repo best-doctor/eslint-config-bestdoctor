@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-bestdoctor",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "BestDoctor eslint config",
   "main": "index.js",
   "author": "NMVikings",
@@ -18,7 +18,8 @@
     "eslint-plugin-jest": "^22.6.4",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react": "^7.13.0"
+    "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-react-hooks": "^1.6.0"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
