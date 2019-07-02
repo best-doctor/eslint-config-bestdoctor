@@ -13,7 +13,9 @@ module.exports = {
   extends: ["plugin:@typescript-eslint/recommended"],
 
   rules: {
-    "@typescript-eslint/ban-ts-ignore": "warn",
+    "@typescript-eslint/ban-ts-ignore": "error",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    // typescript сам резолвит большую часть типов, а там где мы считаем сами нужным указать тип, все еще можно указывать
     "@typescript-eslint/func-call-spacing": ["error"],
     "@typescript-eslint/member-delimiter-style": [
       "error",

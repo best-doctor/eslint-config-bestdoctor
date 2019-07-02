@@ -5,7 +5,7 @@ module.exports = {
 
   rules: {
     "react/boolean-prop-naming": "error",
-    "react/display-name": "warn", // ругается на замыкание
+    "react/display-name": "off", // ругается на замыкание
     "react/no-direct-mutation-state": "error",
     "react/no-unsafe": "error",
     "react/prop-types": "off", // typescript вместо prop-types

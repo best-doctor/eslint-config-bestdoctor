@@ -33,7 +33,7 @@ module.exports = {
     "no-useless-catch": "error",
     "no-useless-constructor": "off", // потому что есть @typescript-eslint/no-useless-constructor
     "no-warning-comments": [
-      "warn",
+      "error",
       { terms: ["todo", "fixme"], location: "anywhere" }
     ],
     "prefer-arrow-callback": "error",
