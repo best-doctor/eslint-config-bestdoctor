@@ -1,35 +1,35 @@
 module.exports = {
-  plugins: ["import"],
+  plugins: ['import'],
 
   extends: [
-    "plugin:import/errors",
-    "plugin:import/warnings",
-    "plugin:import/typescript"
+    'plugin:import/errors',
+    'plugin:import/warnings',
+    'plugin:import/typescript',
   ],
 
   rules: {
-    "import/default": "error",
+    'import/default': 'error',
     // "import/group-exports": "error", добавить позже
-    "import/no-anonymous-default-export": "error",
-    "import/no-extraneous-dependencies": [
-      "error",
-      { devDependencies: ["**/*.test.tsx", "**/*.spec.tsx"] } // Разрешаем импорт devDependencies из тестов
+    'import/no-anonymous-default-export': 'error',
+    'import/no-extraneous-dependencies': [
+      'error',
+      { devDependencies: ['**/*.test.tsx', '**/*.spec.tsx'] }, // Разрешаем импорт devDependencies из тестов
     ],
-    "import/no-unassigned-import": "error",
-    "import/order": [
-      "error",
+    'import/no-unassigned-import': 'error',
+    'import/order': [
+      'error',
       {
         groups: [
-          "builtin",
-          "external",
-          "internal",
-          "parent",
-          "sibling",
-          "index"
+          'builtin',
+          'external',
+          'internal',
+          'parent',
+          'sibling',
+          'index',
         ],
-        "newlines-between": "always"
-      }
+        'newlines-between': 'always',
+      },
     ],
-    "import/prefer-default-export": "error"
-  }
-};
+    'import/prefer-default-export': 'error',
+  },
+}

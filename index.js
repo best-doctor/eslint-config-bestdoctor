@@ -45,11 +45,11 @@ module.exports = {
     prettierPath
   ],
 
-  rules: rules,
+  rules,
 
   globals: {
     __DEV__: true // DEV environment
   },
 
-  settings: settings
+  settings
 };

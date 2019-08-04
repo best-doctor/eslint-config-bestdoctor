@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ["prettier"],
+  plugins: ['prettier'],
 
-  extends: ["prettier", "prettier/@typescript-eslint"]
-};
+  extends: ['prettier', 'prettier/@typescript-eslint'],
+}
