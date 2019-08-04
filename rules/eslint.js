@@ -36,6 +36,7 @@ module.exports = {
       'error',
       { terms: ['todo', 'fixme'], location: 'anywhere' },
     ],
+    'prefer-promise-reject-errors': 'off', // Мы в Promise.reject разрешаем кидать не только текст
     'prefer-arrow-callback': 'error',
     'require-await': 'off', // потому что есть @typescript-eslint/require-await
     'rest-spread-spacing': ['error', 'never'],
