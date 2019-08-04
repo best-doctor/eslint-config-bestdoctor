@@ -32,7 +32,7 @@ module.exports = {
     'no-useless-call': 'error',
     'no-useless-catch': 'error',
     'no-useless-constructor': 'off', // потому что есть @typescript-eslint/no-useless-constructor
-    'no-warning-comments': [
+    'no-warning-comments': [ // Мы против использования таких комментов в коде, лучше сразу создавать таску
       'error',
       { terms: ['todo', 'fixme'], location: 'anywhere' },
     ],

@@ -13,7 +13,7 @@ module.exports = {
   extends: ['plugin:@typescript-eslint/recommended'],
 
   rules: {
-    '@typescript-eslint/ban-ts-ignore': 'error',
+    '@typescript-eslint/ban-ts-ignore': 'warn', // Иногда без ts-ignore не обойтись, но пусть их подсвечивает eslint
     '@typescript-eslint/explicit-function-return-type': 'off',
     // typescript сам резолвит большую часть типов, а там где мы считаем сами нужным указать тип, все еще можно указывать
     '@typescript-eslint/func-call-spacing': ['error'],

@@ -14,6 +14,7 @@ module.exports = {
     // "react/jsx-handler-names": "error", добавить позже
     'react/jsx-one-expression-per-line': 'off',
     'react/jsx-key': 'error',
+    'react/jsx-wrap-multilines': 'off', // prettier сам справляется
     // "react/jsx-sort-prop": "error", добавить позже
   },
 
