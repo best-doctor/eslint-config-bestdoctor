@@ -13,7 +13,7 @@ module.exports = {
     'jest/lowercase-name': 'error',
     'jest/no-alias-methods': 'error',
     'jest/no-disabled-tests': 'error',
-    'jest/no-empty-title': 'error',
+    'jest/valid-title': 'error',
     'jest/no-focused-tests': 'error',
     'jest/no-identical-title': 'error',
     'jest/no-jasmine-globals': 'error',
