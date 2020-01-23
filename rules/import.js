@@ -10,7 +10,7 @@ module.exports = {
   rules: {
     'import/default': 'error',
     'import/extensions': 'off',
-    // "import/group-exports": "error", добавить позже
+    'import/group-exports': 'error',
     'import/no-anonymous-default-export': 'error',
     'import/no-extraneous-dependencies': [
       'error',
