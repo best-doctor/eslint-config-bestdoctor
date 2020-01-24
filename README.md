@@ -9,7 +9,7 @@ This package provides BestDoctor's .eslintrc as an extensible shared config.
 1. Install the package
 
 ```sh
-yarn add @bestdoctor/eslint-config -d
+yarn add @bestdoctor/eslint-config -D
 ```
 
 2. Add `"extends": "@bestdoctor"` to your `.eslintrc`
