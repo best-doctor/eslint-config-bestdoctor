@@ -26,4 +26,4 @@ We have variety of projects in BestDoctor and we want to have same code style in
 - `eslint-plugin-react`
 - `eslint-plugin-react-hooks`
 
-We also have a [frontend styleguide](https://github.com/best-doctor/guides/blob/master/guides/frontend_styleguide.md) (russian only).
+We also have a [frontend styleguide](https://github.com/best-doctor/guides/blob/master/guides/frontend_styleguide.md) (only in russian, sorry).
