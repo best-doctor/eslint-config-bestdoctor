@@ -1,0 +1,1 @@
+# BestDoctor ESLint config

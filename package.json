@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config-bestdoctor",
+  "name": "@bestdoctor/eslint-config",
   "version": "0.5.0",
-  "description": "BestDoctor eslint config",
+  "description": "BestDoctor ESLint config",
   "main": "index.js",
   "author": "NMVikings",
   "license": "ISC",
@@ -30,5 +30,16 @@
     "eslint": ">=6.0.0",
     "prettier": ">=1.18.0",
     "typescript": ">=3.5.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/best-doctor/eslint-config-bestdoctor.git"
+  },
+  "keywords": [
+    "eslint"
+  ],
+  "bugs": {
+    "url": "https://github.com/best-doctor/eslint-config-bestdoctor/issues"
+  },
+  "homepage": "https://github.com/best-doctor/eslint-config-bestdoctor#readme"
 }
