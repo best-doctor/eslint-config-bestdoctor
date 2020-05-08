@@ -1,0 +1,7 @@
+language: node_js
+install:
+  - npm install package-json-validator
+  - gem install mdl
+script:
+  - node_modules/package-json-validator/bin/pjv --filename=package.json
+  - mdl README.md

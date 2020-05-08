@@ -1,22 +1,20 @@
 # BestDoctor ESLint config
 
 [![npm version](https://badge.fury.io/js/%40bestdoctor%2Feslint-config.svg)](https://badge.fury.io/js/%40bestdoctor%2Feslint-config)
+[![Build Status](https://travis-ci.org/best-doctor/eslint-config-bestdoctor.svg?branch=master)](https://travis-ci.org/best-doctor/eslint-config-bestdoctor)
 
 This package provides BestDoctor's .eslintrc as an extensible shared config.
 
 ## Usage
 
-1. Install the package
-
-```sh
-yarn add @bestdoctor/eslint-config -D
-```
-
-2. Add `"extends": "@bestdoctor"` to your `.eslintrc`
+1. Install the package: `yarn add @bestdoctor/eslint-config -D`.
+1. Add `"extends": "@bestdoctor"` to your `.eslintrc`.
 
 ## Motivation
 
-We have variety of projects in BestDoctor and we want to have same code style in all of them. Besides `eslint` we use `typescript`, `jest`, `react` and `prettier`. That's why we have some cool plugins in this config:
+We have variety of projects in BestDoctor and we want to have same code style
+in all of them. Besides `eslint` we use `typescript`, `jest`, `react`
+and `prettier`. That's why we have some cool plugins in this config:
 
 - `@typescript-eslint/eslint-plugin`
 - `eslint-plugin-import`
@@ -26,4 +24,6 @@ We have variety of projects in BestDoctor and we want to have same code style in
 - `eslint-plugin-react`
 - `eslint-plugin-react-hooks`
 
-We also have a [frontend styleguide](https://github.com/best-doctor/guides/blob/master/guides/frontend_styleguide.md) (only in russian, sorry).
+We also have a
+[frontend styleguide](https://github.com/best-doctor/guides/blob/master/guides/frontend_styleguide.md)
+(only in russian, sorry).
