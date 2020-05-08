@@ -5,10 +5,14 @@
 
 This package provides BestDoctor's .eslintrc as an extensible shared config.
 
-## Usage
+## Installation
 
 1. Install the package: `yarn add @bestdoctor/eslint-config -D`.
 1. Add `"extends": "@bestdoctor"` to your `.eslintrc`.
+
+## Usage
+
+Run your eslint.
 
 ## Motivation
 
@@ -27,3 +31,23 @@ and `prettier`. That's why we have some cool plugins in this config:
 We also have a
 [frontend styleguide](https://github.com/best-doctor/guides/blob/master/guides/frontend_styleguide.md)
 (only in russian, sorry).
+
+## Contributing
+
+We would love you to contribute to our project. It's simple:
+
+- Create an issue with bug you found or proposal you have.
+  Wait for approve from maintainer.
+- Create a pull request. Make sure all checks are green.
+- Fix review comments if any.
+- Be awesome.
+
+Here are useful tips:
+
+- You can run all checks and tests with `make check`. Please do it
+  before TravisCI does.
+- We use
+  [BestDoctor python styleguide](https://github.com/best-doctor/guides/blob/master/guides/python_styleguide.md).
+  Sorry, styleguide is available only in Russian for now.
+- We respect [Django CoC](https://www.djangoproject.com/conduct/).
+  Make soft, not bullshit.
