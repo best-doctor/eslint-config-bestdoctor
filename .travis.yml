@@ -10,7 +10,6 @@ before_script:
   - ./cc-test-reporter before-build
 script:
   - yarn typecheck
-  - yarn pj-validate
   - yarn test --coverageDirectory=. --coverage
   - mdl README.md
 after_script:
