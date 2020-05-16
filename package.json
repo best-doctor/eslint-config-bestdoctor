@@ -1,51 +1,52 @@
 {
-  "name": "@bestdoctor/eslint-config",
-  "version": "0.5.4",
-  "description": "BestDoctor ESLint config",
-  "main": "index.js",
-  "author": "NMVikings",
-  "license": "ISC",
-  "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.17.0",
-    "@typescript-eslint/parser": "^2.17.0",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-config-prettier": "^6.9.0",
-    "eslint-import-resolver-alias": "^1.1.2",
-    "eslint-import-resolver-babel-module": "^5.1.1",
-    "eslint-import-resolver-typescript": "^2.0.0",
-    "eslint-plugin-import": "^2.20.0",
-    "eslint-plugin-jest": "^23.6.0",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-react": "^7.18.0",
-    "eslint-plugin-react-hooks": "^2.3.0"
-  },
-  "devDependencies": {
-    "@types/jest": "^25.2.2",
-    "eslint": "^7.0.0",
-    "jest": "^26.0.1",
-    "prettier": "^1.19.1",
-    "ts-jest": "^26.0.0",
-    "typescript": "^3.9.2"
-  },
-  "peerDependencies": {
-    "eslint": ">=6.0.0",
-    "prettier": ">=1.18.0",
-    "typescript": ">=3.5.0"
-  },
-  "scripts": {
-    "test": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/best-doctor/eslint-config-bestdoctor.git"
-  },
-  "keywords": [
-    "eslint"
-  ],
-  "bugs": {
-    "url": "https://github.com/best-doctor/eslint-config-bestdoctor/issues"
-  },
-  "homepage": "https://github.com/best-doctor/eslint-config-bestdoctor#readme"
+    "name": "@bestdoctor/eslint-config",
+    "version": "0.5.4",
+    "description": "BestDoctor ESLint config",
+    "main": "index.js",
+    "author": "NMVikings",
+    "license": "ISC",
+    "dependencies": {
+        "@typescript-eslint/eslint-plugin": "^2.17.0",
+        "@typescript-eslint/parser": "^2.17.0",
+        "eslint-config-airbnb": "^18.0.1",
+        "eslint-config-airbnb-base": "^14.0.0",
+        "eslint-config-prettier": "^6.9.0",
+        "eslint-import-resolver-alias": "^1.1.2",
+        "eslint-import-resolver-babel-module": "^5.1.1",
+        "eslint-import-resolver-typescript": "^2.0.0",
+        "eslint-plugin-import": "^2.20.0",
+        "eslint-plugin-jest": "^23.6.0",
+        "eslint-plugin-jsx-a11y": "^6.2.3",
+        "eslint-plugin-prettier": "^3.1.2",
+        "eslint-plugin-react": "^7.18.0",
+        "eslint-plugin-react-hooks": "^2.3.0"
+    },
+    "devDependencies": {
+        "@types/jest": "^25.2.2",
+        "eslint": "^7.0.0",
+        "jest": "^26.0.1",
+        "prettier": "^1.19.1",
+        "ts-jest": "^26.0.0",
+        "typescript": "^3.9.2"
+    },
+    "peerDependencies": {
+        "eslint": ">=6.0.0",
+        "prettier": ">=1.18.0",
+        "typescript": ">=3.5.0"
+    },
+    "scripts": {
+        "test": "jest",
+        "format": "prettier --write 'rules/**/*' '__tests__/**/*'"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/best-doctor/eslint-config-bestdoctor.git"
+    },
+    "keywords": [
+        "eslint"
+    ],
+    "bugs": {
+        "url": "https://github.com/best-doctor/eslint-config-bestdoctor/issues"
+    },
+    "homepage": "https://github.com/best-doctor/eslint-config-bestdoctor#readme"
 }

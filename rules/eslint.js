@@ -20,10 +20,7 @@ module.exports = {
     'no-empty-function': ['error', { allow: ['arrowFunctions'] }],
     'no-eq-null': 'error',
     'no-floating-decimal': 'error',
-    'no-implicit-coercion': [
-      'error',
-      { boolean: true, number: true, string: true, allow: ['!!'] },
-    ],
+    'no-implicit-coercion': ['error', { boolean: true, number: true, string: true, allow: ['!!'] }],
     'no-multi-spaces': 'error',
     'no-unmodified-loop-condition': 'error',
     'no-unused-vars': 'error',
