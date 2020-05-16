@@ -1,6 +1,8 @@
 language: node_js
+node_js:
+    - lts/*
 install:
-  - npm install package-json-validator
+  - yarn --frozen-lockfile
   - gem install mdl
 before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
@@ -8,8 +10,8 @@ before_script:
   - ./cc-test-reporter before-build
 script:
   - yarn typecheck
+  - yarn pj-validate
   - yarn test --coverageDirectory=. --coverage
-  - node_modules/package-json-validator/bin/pjv --filename=package.json
   - mdl README.md
 after_script:
   - ./cc-test-reporter after-build --coverage-input-type=clover --exit-code $TRAVIS_TEST_RESULT

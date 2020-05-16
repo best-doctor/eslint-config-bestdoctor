@@ -25,6 +25,7 @@
         "@types/jest": "^25.2.2",
         "eslint": "^7.0.0",
         "jest": "^26.0.1",
+        "package-json-validator": "^0.6.3",
         "prettier": "^1.19.1",
         "ts-jest": "^26.0.0",
         "typescript": "^3.9.2"
@@ -37,6 +38,8 @@
     "scripts": {
         "test": "jest",
         "typecheck": "tsc --noEmit",
+        "pj-validate": "pjv",
+        "makecheck": "yarn typecheck && yarn pj-validate && yarn test",
         "format": "prettier --write 'rules/**/*' '__tests__/**/*'"
     },
     "repository": {
