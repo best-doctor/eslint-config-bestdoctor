@@ -1,24 +1,24 @@
 {
     "include": [
-      "__tests__"
+        "__tests__", "global.d.ts"
     ],
     "compilerOptions": {
-      "module": "commonjs",
-      "target": "es5",
-      "noEmit":true,
-      "allowJs": false,
-      "allowSyntheticDefaultImports": false,
-      "allowUnreachableCode": false,
-      "allowUnusedLabels": false,
-      "experimentalDecorators": true,
-      "forceConsistentCasingInFileNames": true,
-      "importHelpers": true,
-      "importsNotUsedAsValues": "error",
-      "strict": true,
-      "noFallthroughCasesInSwitch": true,
-      "noImplicitReturns": true,
-      "noUnusedLocals": true,
-      "noUnusedParameters": true,
-      "skipLibCheck": true
+        "module": "commonjs",
+        "target": "es5",
+        "noEmit": true,
+        "allowJs": false,
+        "allowSyntheticDefaultImports": false,
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
+        "importHelpers": true,
+        "importsNotUsedAsValues": "error",
+        "strict": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "skipLibCheck": true
     }
-  }
+}
