@@ -1,7 +1,12 @@
 # BestDoctor ESLint config
 
 [![npm version](https://badge.fury.io/js/%40bestdoctor%2Feslint-config.svg)](https://badge.fury.io/js/%40bestdoctor%2Feslint-config)
+
 [![Build Status](https://travis-ci.org/best-doctor/eslint-config-bestdoctor.svg?branch=master)](https://travis-ci.org/best-doctor/eslint-config-bestdoctor)
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/84352e5e9d1ae255c55d/maintainability)](https://codeclimate.com/github/best-doctor/eslint-config-bestdoctor/maintainability)
+
+[![Test Coverage](https://api.codeclimate.com/v1/badges/84352e5e9d1ae255c55d/test_coverage)](https://codeclimate.com/github/best-doctor/eslint-config-bestdoctor/test_coverage)
 
 This package provides BestDoctor's .eslintrc as an extensible shared config.
 
