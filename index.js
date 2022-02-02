@@ -31,7 +31,6 @@ const [
   reactPath,
   typescriptPath,
   prettierPath,
-  reactHooksPath,
 ] = configPaths
 
 module.exports = {
@@ -42,7 +41,6 @@ module.exports = {
     // jestPath,
     // jsxPath,
     reactPath,
-    reactHooksPath,
     'airbnb',
     typescriptPath,
     prettierPath,
