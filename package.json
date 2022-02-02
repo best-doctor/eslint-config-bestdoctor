@@ -1,6 +1,6 @@
 {
     "name": "@bestdoctor/eslint-config",
-    "version": "0.5.4",
+    "version": "0.5.5",
     "description": "BestDoctor ESLint config",
     "main": "index.js",
     "author": "NMVikings",
@@ -11,12 +11,12 @@
         "eslint-config-airbnb-typescript": "^12.3.1",
         "eslint-config-prettier": "^8.1.0",
         "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-jest": "^23.13.0",
         "eslint-plugin-jsx-a11y": "^6.4.1",
+        "eslint-plugin-prettier": "^3.1.3",
         "eslint-plugin-react": "^7.22.0",
         "eslint-plugin-react-hooks": "^4.2.0",
-        "eslint-plugin-tsdoc": "^0.2.11",
-        "eslint-plugin-jest": "^23.13.0",
-        "eslint-plugin-prettier": "^3.1.3"
+        "eslint-plugin-tsdoc": "^0.2.11"
     },
     "devDependencies": {
         "@types/jest": "^25.2.2",
