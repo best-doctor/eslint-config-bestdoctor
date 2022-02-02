@@ -8,36 +8,40 @@ module.exports = {
     },
   },
 
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'eslint-plugin-tsdoc'],
 
-  extends: ['plugin:@typescript-eslint/recommended'],
+  extends: [
+    'airbnb-typescript',
+    'airbnb/hooks',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
+  ],
 
   rules: {
-    '@typescript-eslint/ban-ts-ignore': 'warn', // Иногда без ts-ignore не обойтись, но пусть их подсвечивает eslint
-    '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/func-call-spacing': ['error'],
-    '@typescript-eslint/member-delimiter-style': [
+    '@typescript-eslint/explicit-function-return-type': [
       'error',
-      {
-        multiline: {
-          delimiter: 'none',
-          requireLast: true,
-        },
-        singleline: {
-          delimiter: 'semi',
-          requireLast: false,
-        },
-      },
+      { allowExpressions: true, allowTypedFunctionExpressions: true },
     ],
-    '@typescript-eslint/no-explicit-any': 'error',
-    '@typescript-eslint/no-extraneous-class': 'error',
-    '@typescript-eslint/no-for-in-array': 'error',
-    '@typescript-eslint/no-require-imports': 'error',
-    '@typescript-eslint/no-this-alias': 'error',
-    '@typescript-eslint/no-useless-constructor': 'error',
-    '@typescript-eslint/prefer-for-of': 'error',
-    '@typescript-eslint/type-annotation-spacing': 'error',
-    '@typescript-eslint/unified-signatures': 'error',
+    '@typescript-eslint/no-unused-expressions': ['error', { allowShortCircuit: true }],
+    '@typescript-eslint/no-use-before-define': [
+      'error',
+      { functions: false, classes: true, variables: true, typedefs: true },
+    ],
+    '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+    '@typescript-eslint/no-non-null-assertion': 'error',
+    '@typescript-eslint/no-empty-interface': 'off',
+    '@typescript-eslint/comma-dangle': 'off',
+    '@typescript-eslint/ban-types': 'off',
+    '@typescript-eslint/no-floating-promises': 'off',
+    '@typescript-eslint/restrict-template-expressions': 'off',
+    '@typescript-eslint/no-unsafe-return': 'off',
+    '@typescript-eslint/no-unsafe-assignment': 'off',
+    '@typescript-eslint/no-unsafe-call': 'off',
+    '@typescript-eslint/unbound-method': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    'tsdoc/syntax': 'warn',
   },
 
   settings: {
