@@ -22,14 +22,25 @@ const configSettings = configs.map((config) => config.settings)
 const settings = Object.assign({}, ...configSettings)
 const rules = Object.assign({}, ...configRules)
 
-const [eslintPath, importPath, jestPath, jsxPath, reactPath, typescriptPath, prettierPath, reactHooksPath] = configPaths
+const [
+  eslintPath,
+  importPath,
+  // Комментим пока адаптируем пакет к новым правилам
+  // jestPath,
+  // jsxPath,
+  reactPath,
+  typescriptPath,
+  prettierPath,
+  reactHooksPath,
+] = configPaths
 
 module.exports = {
   extends: [
     eslintPath,
     importPath,
-    jestPath,
-    jsxPath,
+    // Комментим пока адаптируем пакет к новым правилам
+    // jestPath,
+    // jsxPath,
     reactPath,
     reactHooksPath,
     'airbnb',
