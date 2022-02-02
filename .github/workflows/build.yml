@@ -1,0 +1,21 @@
+name: Lint and test code
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Run checks
+        run: yarn makecheck
+
+      - name: Run mdl
+        uses: actionshub/markdownlint@main
