@@ -1,13 +1,6 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
 
-  parserOptions: {
-    project: './tsconfig.json',
-    ecmaFeatures: {
-      jsx: true,
-    },
-  },
-
   plugins: ['@typescript-eslint', 'eslint-plugin-tsdoc'],
 
   extends: [
@@ -30,16 +23,6 @@ module.exports = {
     ],
     '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     '@typescript-eslint/no-non-null-assertion': 'error',
-    '@typescript-eslint/no-empty-interface': 'off',
-    '@typescript-eslint/comma-dangle': 'off',
-    '@typescript-eslint/ban-types': 'off',
-    '@typescript-eslint/no-floating-promises': 'off',
-    '@typescript-eslint/restrict-template-expressions': 'off',
-    '@typescript-eslint/no-unsafe-return': 'off',
-    '@typescript-eslint/no-unsafe-assignment': 'off',
-    '@typescript-eslint/no-unsafe-call': 'off',
-    '@typescript-eslint/unbound-method': 'off',
-    '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'tsdoc/syntax': 'warn',
   },
@@ -48,9 +31,6 @@ module.exports = {
     // https://github.com/alexgorbatchev/eslint-import-resolver-typescript#configuration
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.tsx'],
-    },
-    'import/resolver': {
-      typescript: {},
     },
   },
 }
