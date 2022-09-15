@@ -17,6 +17,8 @@ module.exports = {
           '**/*.stories.tsx',
           '**/fixtures.ts',
           '**/setupTests.ts',
+          '**/jest-setup.ts',
+          '**/jest-setup.tsx',
           './*.ts',
           './*.js',
         ],

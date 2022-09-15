@@ -1,6 +1,6 @@
 {
     "name": "@bestdoctor/eslint-config",
-    "version": "0.5.8",
+    "version": "0.6.0",
     "description": "BestDoctor ESLint config",
     "main": "index.js",
     "author": "NMVikings",
@@ -19,6 +19,7 @@
         "eslint-plugin-tsdoc": "^0.2.11"
     },
     "devDependencies": {
+        "@types/eslint": "^8.4.6",
         "@types/jest": "^25.2.2",
         "eslint": "^7.0.0",
         "jest": "^26.0.1",
@@ -27,9 +28,9 @@
         "typescript": "^3.9.2"
     },
     "peerDependencies": {
-        "eslint": ">=6.0.0",
-        "prettier": ">=1.18.0",
-        "typescript": ">=3.5.0"
+        "eslint": ">=7.0.0",
+        "prettier": ">=2.0.0",
+        "typescript": ">=4.0.0"
     },
     "scripts": {
         "test": "jest",

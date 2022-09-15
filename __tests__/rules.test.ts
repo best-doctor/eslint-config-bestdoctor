@@ -6,6 +6,15 @@ const validateConfig = (config: string) => {
   const eslint = new ESLint({
     overrideConfigFile: config,
     useEslintrc: false,
+    overrideConfig: {
+      // should be set in project, not in lib
+      parserOptions: {
+        project: './tsconfig.json',
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
+    },
   })
   return eslint.lintText('')
 }
