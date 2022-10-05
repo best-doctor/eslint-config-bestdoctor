@@ -25,6 +25,13 @@ module.exports = {
     '@typescript-eslint/no-non-null-assertion': 'error',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'tsdoc/syntax': 'warn',
+    // https://github.com/typescript-eslint/typescript-eslint/pull/4623
+    "@typescript-eslint/no-misused-promises": [
+      "error",
+      {
+        "checksVoidReturn": false
+      }
+    ]
   },
 
   settings: {
