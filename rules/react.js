@@ -14,6 +14,7 @@ module.exports = {
     'react/jsx-no-useless-fragment': [2, {
       "allowExpressions": true,
     }],
+    'react/function-component-definition': [2, { "namedComponents": "arrow-function" }],
   },
 
   settings: {
