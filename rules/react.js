@@ -1,6 +1,8 @@
 module.exports = {
   plugins: ['react'],
 
+  extends: ['plugin:react/recommended'],
+
   rules: {
     'react/prop-types': 'off',
     'react/jsx-props-no-spreading': 'error',
@@ -14,6 +16,7 @@ module.exports = {
     'react/jsx-no-useless-fragment': [2, {
       "allowExpressions": true,
     }],
+    'react/jsx-key': 2,
   },
 
   settings: {
