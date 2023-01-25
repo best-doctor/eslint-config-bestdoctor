@@ -1,6 +1,6 @@
 {
     "name": "@bestdoctor/eslint-config",
-    "version": "0.7.7",
+    "version": "0.7.8",
     "description": "BestDoctor ESLint config",
     "main": "index.js",
     "author": "NMVikings",
